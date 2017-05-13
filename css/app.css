@@ -6064,6 +6064,9 @@ header {
     bottom: 0; }
     header .scroll-down .scroll-line {
       width: 3px; }
+      @media (min-width: 570px) and (max-width: 767px) {
+        header .scroll-down .scroll-line {
+          display: none; } }
       @media (min-width: 570px) {
         header .scroll-down .scroll-line {
           width: 5px; } }
@@ -6076,6 +6079,9 @@ header {
       animation: bounce 2s infinite;
       margin-left: -10.5px;
       width: 20px; }
+      @media (min-width: 570px) and (max-width: 767px) {
+        header .scroll-down .bounce {
+          display: none; } }
       @media (min-width: 570px) {
         header .scroll-down .bounce {
           width: 25px;
