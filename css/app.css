@@ -6063,7 +6063,10 @@ header {
     position: absolute;
     bottom: 0; }
     header .scroll-down .scroll-line {
-      width: 5px; }
+      width: 3px; }
+      @media (min-width: 570px) {
+        header .scroll-down .scroll-line {
+          width: 5px; } }
     header .scroll-down .bounce {
       position: absolute;
       bottom: 0;
@@ -6071,8 +6074,12 @@ header {
       -moz-animation: bounce 2s infinite;
       -webkit-animation: bounce 2s infinite;
       animation: bounce 2s infinite;
-      margin-left: -13.5px;
-      width: 25px; }
+      margin-left: -10.5px;
+      width: 20px; }
+      @media (min-width: 570px) {
+        header .scroll-down .bounce {
+          width: 25px;
+          margin-left: -13.5px; } }
       header .scroll-down .bounce img {
         text-align: center; }
 
