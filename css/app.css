@@ -8482,11 +8482,28 @@ header {
       @media (min-width: 767px) {
         #whatido .bold-capton h1 {
           font-size: 40px; } }
-  #whatido img {
+  #whatido .under-line {
     width: 275px; }
+    @media (max-width: 1023px) {
+      #whatido .under-line {
+        margin-bottom: 30px; } }
   #whatido .scroll-down {
     text-align: center;
     position: absolute;
     top: -50px; }
     #whatido .scroll-down img {
       width: 5px; }
+  #whatido .services {
+    margin: 50px 0; }
+    #whatido .services .service-type {
+      text-align: center; }
+      #whatido .services .service-type .service-icon {
+        width: 150px; }
+      #whatido .services .service-type h6 {
+        font-family: big_john-webfont; }
+      #whatido .services .service-type .dotted-line {
+        width: 100%;
+        margin: 15px 0; }
+        #whatido .services .service-type .dotted-line img {
+          width: 3px;
+          height: 35px; }
