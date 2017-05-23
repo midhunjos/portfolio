@@ -159,40 +159,70 @@ and open the template in the editor.
       </div><!--//container-->
       <!--Gallery-->
       <div class="col-12 my-works--gallery">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-6 gallery-pic">
+        <div class="row mwg">
+          <li class="col-md-3 col-sm-6 col-xs-6 gallery-pic">
             <div class="row">
               <a data-fancybox="test-srcset" data-type="image" data-srcset="images/g1.jpg" data-width="1200" data-height="720" href="images/g1.jpg">
                 <img width="240" src="images/g1.jpg" />
               </a>         
             </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-6 gallery-pic">
+          </li>
+          <li class="col-md-3 col-sm-6 col-xs-6 gallery-pic">
             <div class="row">
-              <a data-fancybox="test-srcset" data-type="image" data-srcset="images/g2.jpg" data-width="1200" data-height="720" href="images/g1.jpg">
-                <img width="240" src="images/g2.jpg" />
-              </a>   
+              <a data-fancybox="test-srcset" data-type="image" data-srcset="images/g1.jpg" data-width="1200" data-height="720" href="images/g1.jpg">
+                <img width="240" src="images/g1.jpg" />
+              </a>         
             </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-6 gallery-pic">
+          </li>
+         
+          <li class="col-md-3 col-sm-6 col-xs-6 gallery-pic">
             <div class="row">
-              <a data-fancybox="test-srcset" data-type="image" data-srcset="images/g3.jpg" data-width="1200" data-height="720" href="images/g1.jpg">
-                <img width="240" src="images/g3.jpg" />
-              </a>   
+              <a data-fancybox="test-srcset" data-type="image" data-srcset="images/g1.jpg" data-width="1200" data-height="720" href="images/g1.jpg">
+                <img width="240" src="images/g1.jpg" />
+              </a>         
             </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-6 gallery-pic">
+          </li>
+         <li class="col-md-3 col-sm-6 col-xs-6 gallery-pic">
             <div class="row">
-              <a data-fancybox="test-srcset" data-type="image" data-srcset="images/g4.jpg" data-width="1200" data-height="720" href="images/g1.jpg">
-                <img width="240" src="images/g4.jpg" />
-              </a>   
+              <a data-fancybox="test-srcset" data-type="image" data-srcset="images/g1.jpg" data-width="1200" data-height="720" href="images/g1.jpg">
+                <img width="240" src="images/g1.jpg" />
+              </a>         
             </div>
-          </div>
+          </li>
+          <li class="col-md-3 col-sm-6 col-xs-6 gallery-pic">
+            <div class="row">
+              <a data-fancybox="test-srcset" data-type="image" data-srcset="images/g1.jpg" data-width="1200" data-height="720" href="images/g1.jpg">
+                <img width="240" src="images/g1.jpg" />
+              </a>         
+            </div>
+          </li>
+          <li class="col-md-3 col-sm-6 col-xs-6 gallery-pic">
+            <div class="row">
+              <a data-fancybox="test-srcset" data-type="image" data-srcset="images/g1.jpg" data-width="1200" data-height="720" href="images/g1.jpg">
+                <img width="240" src="images/g1.jpg" />
+              </a>         
+            </div>
+          </li>
+          <li class="col-md-3 col-sm-6 col-xs-6 gallery-pic">
+            <div class="row">
+              <a data-fancybox="test-srcset" data-type="image" data-srcset="images/g1.jpg" data-width="1200" data-height="720" href="images/g1.jpg">
+                <img width="240" src="images/g1.jpg" />
+              </a>         
+            </div>
+          </li>
+          <li class="col-md-3 col-sm-6 col-xs-6 gallery-pic">
+            <div class="row">
+              <a data-fancybox="test-srcset" data-type="image" data-srcset="images/g1.jpg" data-width="1200" data-height="720" href="images/g1.jpg">
+                <img width="240" src="images/g1.jpg" />
+              </a>         
+            </div>
+          </li>
         </div>
-      </div><!--//Gallery-->
+         </div>
+      <!--//Gallery-->
       <!--Load more button-->
       <div class="col-xs-12 load-more--action">
-        <a href="#"><img src="images/load-more.png" alt="" class="img-fluid"/></a>
+        <a id="loadMore"><img src="images/load-more.png" alt="" class="img-fluid"/></a>
       </div>
       <!--//Load more button-->
     </section><!--//My-works-section-->
@@ -365,6 +395,7 @@ and open the template in the editor.
       </div><!--//container-->
     </section><!--//Contact us section-->
 
+
     <!-- FULLSCREEN MODAL CODE (.fullscreen) -->
     <div class="modal fade fullscreen" id="menuModal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -410,6 +441,19 @@ and open the template in the editor.
         $('#menuModal').modal('hide');
     });
 });
+
+$(document).ready(function () {
+    size_li = $(".mwg li").length;
+    //alert((".mwg li").length);
+    x=4;
+    $('.mwg li:lt('+x+')').show();
+    $('#loadMore').click(function () {
+        x= (x+5 <= size_li) ? x+5 : size_li;
+        $('.mwg li:lt('+x+')').show();
+    });
+
+});
+
     </script>
   </body>
 </html>

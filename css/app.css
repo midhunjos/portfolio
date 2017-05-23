@@ -8576,7 +8576,8 @@ header {
     margin: 50px 0; }
     #my-works .my-works--gallery .gallery-pic {
       height: auto;
-      overflow: hidden; }
+      overflow: hidden;
+      list-style: none; }
       @media (min-width: 570px) {
         #my-works .my-works--gallery .gallery-pic {
           height: 275px; } }
@@ -8632,6 +8633,9 @@ header {
   transition-timing-function: cubic-bezier(0.55, 0.06, 0.68, 0.19);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
+
+.mwg li {
+  display: none; }
 
 .fancybox-container--ready .fancybox-bg {
   opacity: .87;
