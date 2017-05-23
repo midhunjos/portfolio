@@ -404,6 +404,12 @@ and open the template in the editor.
         }
 
       });
+      
+      $(function () {
+    $(".modal-body ul li a").on('click', function() {
+        $('#menuModal').modal('hide');
+    });
+});
     </script>
   </body>
 </html>
